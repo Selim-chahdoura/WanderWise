@@ -9,7 +9,6 @@ Examples:
 - What are the best things to do in Marrakech?
 - How can I get around Bangkok?
 - Which areas of Lisbon are known for nightlife?
-- What should I know before visiting Morocco?
 
 ## WanderWise v1
 

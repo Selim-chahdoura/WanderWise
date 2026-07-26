@@ -9,11 +9,12 @@ dump_path = Path("data/raw/wikivoyage.xml.bz2")
 output_path = Path("data/raw/extracted_pages.json")
 
 countries = [
+    "Tunisia",
     "Morocco",
     "Portugal",
     "Thailand",
     "Japan",
-    "Mauritius",
+    "Mauritius"
 ]
 
 
