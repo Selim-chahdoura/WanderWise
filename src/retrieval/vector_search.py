@@ -1,61 +1,27 @@
-import json
-from pathlib import Path
-
-from minsearch import VectorSearch
+import psycopg
+from pgvector.psycopg import register_vector
 from sentence_transformers import SentenceTransformer
 
 
-data_path = Path("data/processed/chunked_documents.json")
+database_url = "postgresql://user:pswd@localhost:5432/wanderwise"
 model_name = "all-MiniLM-L6-v2"
-
-
-def load_documents():
-    with open(data_path, encoding="utf-8") as file:
-        return json.load(file)
-
-
-def build_text(document):
-    parts = [
-        document.get("country"),
-        document.get("destination"),
-        document.get("section"),
-        document.get("subsection"),
-        document.get("text"),
-    ]
-
-    return " ".join(part for part in parts if part)
 
 
 def create_model():
     return SentenceTransformer(model_name)
 
 
-def create_index(documents, model):
-    texts = [build_text(document) for document in documents]
+def connect():
+    connection = psycopg.connect(database_url)
+    register_vector(connection)
 
-    embeddings = model.encode(
-        texts,
-        normalize_embeddings=True,
-        show_progress_bar=True,
-    )
-
-    index = VectorSearch(
-        keyword_fields=[
-            "country",
-            "destination",
-            "place_type",
-        ]
-    )
-
-    index.fit(embeddings, documents)
-
-    return index
+    return connection
 
 
 def search(
-    index,
-    model,
+    connection,
     query,
+    model = create_model(),
     country=None,
     destination=None,
     num_results=5,
@@ -65,42 +31,81 @@ def search(
         normalize_embeddings=True,
     )
 
-    filters = {}
+    conditions = []
+    parameters = [query_embedding]
 
     if country:
-        filters["country"] = country
+        conditions.append("country = %s")
+        parameters.append(country)
 
     if destination:
-        filters["destination"] = destination
+        conditions.append("destination = %s")
+        parameters.append(destination)
 
-    return index.search(
-        query_embedding,
-        filter_dict=filters,
-        num_results=num_results,
+    where_clause = ""
+
+    if conditions:
+        where_clause = "WHERE " + " AND ".join(conditions)
+
+    parameters.extend(
+        [
+            query_embedding,
+            num_results,
+        ]
     )
+
+    return connection.execute(
+        f"""
+        SELECT
+            id,
+            country,
+            destination,
+            place_type,
+            section,
+            subsection,
+            text,
+            1 - (embedding <=> %s) AS score
+        FROM documents
+        {where_clause}
+        ORDER BY embedding <=> %s
+        LIMIT %s
+        """,
+        parameters,
+    ).fetchall()
 
 
 def print_results(results):
     for result in results:
+        (
+            document_id,
+            country,
+            destination,
+            place_type,
+            section,
+            subsection,
+            text,
+            score,
+        ) = result
+
         print()
-        print(f"ID: {result['id']}")
-        print(f"Country: {result['country']}")
-        print(f"Destination: {result['destination']}")
-        print(f"Section: {result['section']}")
-        print(f"Subsection: {result['subsection']}")
-        print(result["text"][:400])
+        print(f"Score: {score:.3f}")
+        print(f"ID: {document_id}")
+        print(f"Country: {country}")
+        print(f"Destination: {destination}")
+        print(f"Section: {section}")
+        print(f"Subsection: {subsection}")
+        print(text[:400])
 
 
 if __name__ == "__main__":
-    documents = load_documents()
     model = create_model()
-    index = create_index(documents, model)
 
-    results = search(
-        index=index,
-        model=model,
-        query="How can I get around Marrakech?",
-        country="Morocco",
-    )
+    with connect() as connection:
+        results = search(
+            connection=connection,
+            query="How can I get around Marrakech?",
+            model=model
+            
+        )
 
-    print_results(results)
+        print_results(results)

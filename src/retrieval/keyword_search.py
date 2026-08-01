@@ -1,51 +1,110 @@
-import json
-from pathlib import Path
+import psycopg
+from src.retrieval.index_documents import connect
 
-from minsearch import Index
+database_url = "postgresql://user:pswd@localhost:5432/wanderwise"
 
 
-data_path = Path("data/processed/chunked_documents.json")
 
-def load_documents():
-    with open(data_path, encoding="utf-8") as file:
-        return json.load(file)
+def search(
+    connection,
+    query,
+    country=None,
+    destination=None,
+    num_results=5,
+    destination_weight=1.0,
+    section_weight=0.7,
+    subsection_weight=0.5,
+    text_weight=0.2,
+):
+    weights = [
+        text_weight,
+        subsection_weight,
+        section_weight,
+        destination_weight,
+    ]
 
-def create_index(documents): 
-    index = Index(
-    text_fields=["country", "destination", "section", "subsection", "text"],
-    keyword_fields=["country", "place_type", "destination"]
-    )
-    index.fit(documents)
-    return index
+    conditions = [
+        "search_vector @@ websearch_to_tsquery('english', %s)"
+    ]
 
-boost = {
-        "country": 1.5,
-        "destination": 3.0,
-        "section": 2.0,
-        "subsection": 2.0,
-        "text": 1.0,
-    }
+    filter_parameters = [query]
 
-def search(index, query, boost_dict=None):
-    return index.search(
-        query=query,
-        boost_dict=boost_dict,
-        num_results=5,
-    )
+    if country:
+        conditions.append("country = %s")
+        filter_parameters.append(country)
+
+    if destination:
+        conditions.append("destination = %s")
+        filter_parameters.append(destination)
+
+    where_clause = " AND ".join(conditions)
+
+    # Parameters must follow the exact placeholder order in the SQL:
+    # 1. weights for ts_rank
+    # 2. query for ts_rank
+    # 3. query for WHERE
+    # 4. optional filters
+    # 5. limit
+    parameters = [
+        weights,
+        query,
+        *filter_parameters,
+        num_results,
+    ]
+
+    return connection.execute(
+        f"""
+        SELECT
+            id,
+            country,
+            destination,
+            place_type,
+            section,
+            subsection,
+            text,
+            ts_rank(
+                %s::real[],
+                search_vector,
+                websearch_to_tsquery('english', %s)
+            ) AS score
+        FROM documents
+        WHERE {where_clause}
+        ORDER BY score DESC
+        LIMIT %s
+        """,
+        parameters,
+    ).fetchall()
+
+def print_results(results):
+    for result in results:
+        (
+            document_id,
+            country,
+            destination,
+            place_type,
+            section,
+            subsection,
+            text,
+            score,
+        ) = result
+
+        print()
+        print(f"Score: {score:.3f}")
+        print(f"ID: {document_id}")
+        print(f"Country: {country}")
+        print(f"Destination: {destination}")
+        print(f"Section: {section}")
+        print(f"Subsection: {subsection}")
+        print(text[:400])
+
 
 if __name__ == "__main__":
-    documents = load_documents()
-    index = create_index(documents)
+    with connect() as connection:
+        results = search(
+            connection=connection,
+            query="How can I get around Marrakech?",
+            country="Morocco",
+            destination="Marrakech",
+        )
 
-    results = search(
-        index,
-        "How can I get around Tunis?",
-    )
-
-    for result in results:
-        print()
-        print(result["country"])
-        print(result["destination"])
-        print(result["section"])
-        print(result["subsection"])
-        print(result["text"][:300])
+        print_results(results)

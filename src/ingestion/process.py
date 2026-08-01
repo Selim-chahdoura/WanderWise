@@ -37,7 +37,12 @@ def clean_text(text):
     text = re.sub(r"\[\[[^|\]]+\|([^\]]+)\]\]", r"\1", text)
     text = re.sub(r"\[\[([^\]]+)\]\]", r"\1", text)
     text = re.sub(r"<[^>]+>", "", text)
-
+    text = re.sub(
+        r"^\s*[*#;-]+\s*$",
+        "",
+        text,
+        flags=re.MULTILINE,
+    )
     text = text.replace("'''", "")
     text = text.replace("''", "")
 

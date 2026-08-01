@@ -1,0 +1,2002 @@
+[
+  {
+    "question": "When is the best time to visit Sukhothai's ruins for cooler temperatures and fewer crowds?",
+    "country": "Thailand",
+    "destination": "Sukhothai",
+    "relevant_document_ids": [
+      "1460"
+    ],
+    "source_section": "See",
+    "source_subsection": null
+  },
+  {
+    "question": "Why might photographs of Sukhothai's temples be challenging after midday?",
+    "country": "Thailand",
+    "destination": "Sukhothai",
+    "relevant_document_ids": [
+      "1460"
+    ],
+    "source_section": "See",
+    "source_subsection": null
+  },
+  {
+    "question": "What's the main difference between the southern zone and the northern/western zones of Sukhothai Historical Park?",
+    "country": "Thailand",
+    "destination": "Sukhothai",
+    "relevant_document_ids": [
+      "1464"
+    ],
+    "source_section": "See",
+    "source_subsection": "Sukhothai Historical Park (South Zone)"
+  },
+  {
+    "question": "How many monuments are in the southern zone of Sukhothai Historical Park?",
+    "country": "Thailand",
+    "destination": "Sukhothai",
+    "relevant_document_ids": [
+      "1464"
+    ],
+    "source_section": "See",
+    "source_subsection": "Sukhothai Historical Park (South Zone)"
+  },
+  {
+    "question": "Where can I find the best port wine in Porto?",
+    "country": "Portugal",
+    "destination": "Porto",
+    "relevant_document_ids": [
+      "824"
+    ],
+    "source_section": "Drink",
+    "source_subsection": null
+  },
+  {
+    "question": "What areas of Porto have the most bars?",
+    "country": "Portugal",
+    "destination": "Porto",
+    "relevant_document_ids": [
+      "824"
+    ],
+    "source_section": "Drink",
+    "source_subsection": null
+  },
+  {
+    "question": "How long does it take to get from Tokyo to Sendai by bullet train?",
+    "country": "Japan",
+    "destination": "Sendai",
+    "relevant_document_ids": [
+      "2044"
+    ],
+    "source_section": "Get in",
+    "source_subsection": null
+  },
+  {
+    "question": "Is Sendai closer to Tokyo than Kyoto is?",
+    "country": "Japan",
+    "destination": "Sendai",
+    "relevant_document_ids": [
+      "2044"
+    ],
+    "source_section": "Get in",
+    "source_subsection": null
+  },
+  {
+    "question": "What are some good places to go from Bangkok for a short trip within Thailand?",
+    "country": "Thailand",
+    "destination": "Bangkok",
+    "relevant_document_ids": [
+      "1133"
+    ],
+    "source_section": "Go next",
+    "source_subsection": "Further destinations"
+  },
+  {
+    "question": "Can you list the overland destinations from Bangkok to other countries?",
+    "country": "Thailand",
+    "destination": "Bangkok",
+    "relevant_document_ids": [
+      "1133"
+    ],
+    "source_section": "Go next",
+    "source_subsection": "Further destinations"
+  },
+  {
+    "question": "What are the main events in Braga during Holy Week?",
+    "country": "Portugal",
+    "destination": "Braga",
+    "relevant_document_ids": [
+      "706"
+    ],
+    "source_section": "Do",
+    "source_subsection": "Festivities in Braga"
+  },
+  {
+    "question": "When does Braga host its Roman-themed cultural fair?",
+    "country": "Portugal",
+    "destination": "Braga",
+    "relevant_document_ids": [
+      "706"
+    ],
+    "source_section": "Do",
+    "source_subsection": "Festivities in Braga"
+  },
+  {
+    "question": "Which major cities in Morocco are popular entry points for international flights?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "176"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By plane"
+  },
+  {
+    "question": "What are some budget-friendly airlines that offer direct flights to Morocco from European cities?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "176"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By plane"
+  },
+  {
+    "question": "What's the name of the town hall in Aveiro?",
+    "country": "Portugal",
+    "destination": "Aveiro",
+    "relevant_document_ids": [
+      "686"
+    ],
+    "source_section": "See",
+    "source_subsection": null
+  },
+  {
+    "question": "Are there any notable landmarks near Aveiro Cathedral?",
+    "country": "Portugal",
+    "destination": "Aveiro",
+    "relevant_document_ids": [
+      "686"
+    ],
+    "source_section": "See",
+    "source_subsection": null
+  },
+  {
+    "question": "What are some popular snacks in Mauritius that locals enjoy?",
+    "country": "Mauritius",
+    "destination": "Port Louis",
+    "relevant_document_ids": [
+      "2133"
+    ],
+    "source_section": "Eat",
+    "source_subsection": null
+  },
+  {
+    "question": "Are there any specific areas in Port Louis where you can find Chinese restaurants open late?",
+    "country": "Mauritius",
+    "destination": "Port Louis",
+    "relevant_document_ids": [
+      "2133"
+    ],
+    "source_section": "Eat",
+    "source_subsection": null
+  },
+  {
+    "question": "What's the best way to see the Fez old town from a high place?",
+    "country": "Morocco",
+    "destination": "Fez",
+    "relevant_document_ids": [
+      "342"
+    ],
+    "source_section": "Do",
+    "source_subsection": null
+  },
+  {
+    "question": "Where can I get a shave that's cheaper than other places in Fez?",
+    "country": "Morocco",
+    "destination": "Fez",
+    "relevant_document_ids": [
+      "342"
+    ],
+    "source_section": "Do",
+    "source_subsection": null
+  },
+  {
+    "question": "What's the typical price range for a taxi ride from Sousse to Port El Kantaoui?",
+    "country": "Tunisia",
+    "destination": "Sousse",
+    "relevant_document_ids": [
+      "136"
+    ],
+    "source_section": "Get around",
+    "source_subsection": null
+  },
+  {
+    "question": "Do taxis in Sousse have meters and how do they work?",
+    "country": "Tunisia",
+    "destination": "Sousse",
+    "relevant_document_ids": [
+      "136"
+    ],
+    "source_section": "Get around",
+    "source_subsection": null
+  },
+  {
+    "question": "Is it safe to drink tap water in Mauritius?",
+    "country": "Mauritius",
+    "destination": null,
+    "relevant_document_ids": [
+      "2109"
+    ],
+    "source_section": "Stay healthy",
+    "source_subsection": null
+  },
+  {
+    "question": "What should I avoid eating if I consume reef fish in Mauritius?",
+    "country": "Mauritius",
+    "destination": null,
+    "relevant_document_ids": [
+      "2109"
+    ],
+    "source_section": "Stay healthy",
+    "source_subsection": null
+  },
+  {
+    "question": "What historical period saw Japan become a centralized state after absorbing Chinese culture?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1484"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "History"
+  },
+  {
+    "question": "When did Japan's recorded history begin according to the text?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1484"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "History"
+  },
+  {
+    "question": "What's the short name for Osaka University?",
+    "country": "Japan",
+    "destination": "Osaka",
+    "relevant_document_ids": [
+      "2000"
+    ],
+    "source_section": "Learn",
+    "source_subsection": null
+  },
+  {
+    "question": "Does Osaka University belong to the National Seven Universities in Japan?",
+    "country": "Japan",
+    "destination": "Osaka",
+    "relevant_document_ids": [
+      "2000"
+    ],
+    "source_section": "Learn",
+    "source_subsection": null
+  },
+  {
+    "question": "What are some examples of tokusatsu that are popular in Japan but not widely known outside?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1578"
+    ],
+    "source_section": "Do",
+    "source_subsection": "Pop culture"
+  },
+  {
+    "question": "How do tokusatsu shows like Ultraman relate to other pop culture series?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1578"
+    ],
+    "source_section": "Do",
+    "source_subsection": "Pop culture"
+  },
+  {
+    "question": "What are the three main dishes of Tokyo cuisine?",
+    "country": "Japan",
+    "destination": "Tokyo",
+    "relevant_document_ids": [
+      "1777"
+    ],
+    "source_section": "Eat",
+    "source_subsection": null
+  },
+  {
+    "question": "Where can I find monjayaki in Tokyo?",
+    "country": "Japan",
+    "destination": "Tokyo",
+    "relevant_document_ids": [
+      "1777"
+    ],
+    "source_section": "Eat",
+    "source_subsection": null
+  },
+  {
+    "question": "How much does a night at a ryokan typically cost for one person?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1640"
+    ],
+    "source_section": "Sleep",
+    "source_subsection": "''Ryokan''"
+  },
+  {
+    "question": "What should I wear at a ryok: a yukata or Western clothes?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1640"
+    ],
+    "source_section": "Sleep",
+    "source_subsection": "''Ryokan''"
+  },
+  {
+    "question": "What's a good option for staying overnight in Tokyo after the last train stops at 1 AM?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1652"
+    ],
+    "source_section": "Sleep",
+    "source_subsection": "Last resorts"
+  },
+  {
+    "question": "Where can I find places to sleep if I missed the last train in Tokyo?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1652"
+    ],
+    "source_section": "Sleep",
+    "source_subsection": "Last resorts"
+  },
+  {
+    "question": "How long is the Casablanca tramway route?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "195"
+    ],
+    "source_section": "Get around",
+    "source_subsection": "By tramway"
+  },
+  {
+    "question": "What are the options for purchasing tramway tickets in Casablanca?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "195"
+    ],
+    "source_section": "Get around",
+    "source_subsection": "By tramway"
+  },
+  {
+    "question": "What historical event happened in Nagasaki on August 9, 1945?",
+    "country": "Japan",
+    "destination": "Nagasaki",
+    "relevant_document_ids": [
+      "1934"
+    ],
+    "source_section": "Understand",
+    "source_subsection": null
+  },
+  {
+    "question": "Which cultures have influenced Nagasaki's development historically?",
+    "country": "Japan",
+    "destination": "Nagasaki",
+    "relevant_document_ids": [
+      "1934"
+    ],
+    "source_section": "Understand",
+    "source_subsection": null
+  },
+  {
+    "question": "How late is it normal to arrive for events in Thailand?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "987"
+    ],
+    "source_section": "Respect",
+    "source_subsection": "General"
+  },
+  {
+    "question": "Do Thais commonly believe in supernatural elements like evil spirits?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "987"
+    ],
+    "source_section": "Respect",
+    "source_subsection": "General"
+  },
+  {
+    "question": "If I have dual citizenship with Morocco, do I need to worry about being treated differently by authorities?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "253"
+    ],
+    "source_section": "Stay safe",
+    "source_subsection": "Dual nationals"
+  },
+  {
+    "question": "What happens if I'm arrested while having Moroccan citizenship?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "253"
+    ],
+    "source_section": "Stay safe",
+    "source_subsection": "Dual nationals"
+  },
+  {
+    "question": "What are the main bus companies that tourists use in Morocco for traveling to Marrakech?",
+    "country": "Morocco",
+    "destination": "Marrakech",
+    "relevant_document_ids": [
+      "366"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By bus"
+  },
+  {
+    "question": "How much does a bus ticket cost from Marrakech to Agadir?",
+    "country": "Morocco",
+    "destination": "Marrakech",
+    "relevant_document_ids": [
+      "366"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By bus"
+  },
+  {
+    "question": "What's a good budget-friendly place to stay near Agadir?",
+    "country": "Morocco",
+    "destination": "Agadir",
+    "relevant_document_ids": [
+      "308"
+    ],
+    "source_section": "Sleep",
+    "source_subsection": null
+  },
+  {
+    "question": "How much does a basic hotel room cost in Agadir during peak season?",
+    "country": "Morocco",
+    "destination": "Agadir",
+    "relevant_document_ids": [
+      "308"
+    ],
+    "source_section": "Sleep",
+    "source_subsection": null
+  },
+  {
+    "question": "How long do I typically wait for a train in Tunisia compared to other transportation options?",
+    "country": "Tunisia",
+    "destination": null,
+    "relevant_document_ids": [
+      "16"
+    ],
+    "source_section": "Get around",
+    "source_subsection": "By train"
+  },
+  {
+    "question": "Do I need to check the schedule for trains in Tunisia, or is there a better way to find out which train I'm on?",
+    "country": "Tunisia",
+    "destination": null,
+    "relevant_document_ids": [
+      "16"
+    ],
+    "source_section": "Get around",
+    "source_subsection": "By train"
+  },
+  {
+    "question": "What is the significance of spirit houses in Thai homes?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "848"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Culture"
+  },
+  {
+    "question": "How does Thai Buddhism differ from other Buddhist countries in terms of practice?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "848"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Culture"
+  },
+  {
+    "question": "How can I get to Carthage from Tunis?",
+    "country": "Tunisia",
+    "destination": "Tunis",
+    "relevant_document_ids": [
+      "84"
+    ],
+    "source_section": "Go next",
+    "source_subsection": "Suburbs"
+  },
+  {
+    "question": "What's the best way to reach Sidi Bou Saïd without taking a taxi?",
+    "country": "Tunisia",
+    "destination": "Tunis",
+    "relevant_document_ids": [
+      "84"
+    ],
+    "source_section": "Go next",
+    "source_subsection": "Suburbs"
+  },
+  {
+    "question": "Can I hitchhike out of Tokyo easily?",
+    "country": "Japan",
+    "destination": "Tokyo",
+    "relevant_document_ids": [
+      "1729"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By thumb"
+  },
+  {
+    "question": "What's the best way to get out of Tokyo by hitchhiking?",
+    "country": "Japan",
+    "destination": "Tokyo",
+    "relevant_document_ids": [
+      "1729"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By thumb"
+  },
+  {
+    "question": "How can I effectively negotiate the price of a product without appearing too enthusiastic?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "217"
+    ],
+    "source_section": "Buy",
+    "source_subsection": "Bargaining"
+  },
+  {
+    "question": "What should I do if I want to save money when bargaining with a vendor in Morocco?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "217"
+    ],
+    "source_section": "Buy",
+    "source_subsection": "Bargaining"
+  },
+  {
+    "question": "What's the typical price range for lodging in Chiang: Is it affordable for budget travelers?",
+    "country": "Thailand",
+    "destination": "Chiang Mai",
+    "relevant_document_ids": [
+      "1222"
+    ],
+    "source_section": "Sleep",
+    "source_subsection": null
+  },
+  {
+    "question": "Do Thai-style boutique resorts near Chiang Mai's old city center have pools and limited room counts?",
+    "country": "Thailand",
+    "destination": "Chiang Mai",
+    "relevant_document_ids": [
+      "1222"
+    ],
+    "source_section": "Sleep",
+    "source_subsection": null
+  },
+  {
+    "question": "Where can you find discotheques in Rodrigues?",
+    "country": "Mauritius",
+    "destination": "Rodrigues",
+    "relevant_document_ids": [
+      "2119"
+    ],
+    "source_section": "Drink",
+    "source_subsection": null
+  },
+  {
+    "question": "Are there any discotheques outside of Port Mathurin on Rodrigues?",
+    "country": "Mauritius",
+    "destination": "Rodrigues",
+    "relevant_document_ids": [
+      "2119"
+    ],
+    "source_section": "Drink",
+    "source_subsection": null
+  },
+  {
+    "question": "What are the main bus companies operating in Portugal?",
+    "country": "Portugal",
+    "destination": null,
+    "relevant_document_ids": [
+      "490"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By bus"
+  },
+  {
+    "question": "Are there direct bus connections from Portugal to Spain?",
+    "country": "Portugal",
+    "destination": null,
+    "relevant_document_ids": [
+      "490"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By bus"
+  },
+  {
+    "question": "Can I use my Kansai ICOCA card for Suica purchases in Tokyo?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1592"
+    ],
+    "source_section": "Buy",
+    "source_subsection": "IC cards"
+  },
+  {
+    "question": "How do I get a refund for my Suica card if I'm leaving Japan?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1592"
+    ],
+    "source_section": "Buy",
+    "source_subsection": "IC cards"
+  },
+  {
+    "question": "What's the best place to find port wine in Porto?",
+    "country": "Portugal",
+    "destination": "Porto",
+    "relevant_document_ids": [
+      "815"
+    ],
+    "source_section": "Buy",
+    "source_subsection": "What to buy?"
+  },
+  {
+    "question": "Which brands are known for quality craftsmanship in Porto?",
+    "country": "Portugal",
+    "destination": "Porto",
+    "relevant_document_ids": [
+      "815"
+    ],
+    "source_section": "Buy",
+    "source_subsection": "What to buy?"
+  },
+  {
+    "question": "What happened to Portugal after King Sebastião died in 1578?",
+    "country": "Portugal",
+    "destination": "Lisbon",
+    "relevant_document_ids": [
+      "558"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Decline"
+  },
+  {
+    "question": "How did the 1755 Lisbon earthquake impact the city's development?",
+    "country": "Portugal",
+    "destination": "Lisbon",
+    "relevant_document_ids": [
+      "558"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Decline"
+  },
+  {
+    "question": "How can I stay safe while walking in Lisbon?",
+    "country": "Portugal",
+    "destination": "Lisbon",
+    "relevant_document_ids": [
+      "626"
+    ],
+    "source_section": "Stay safe",
+    "source_subsection": "Walking and driving"
+  },
+  {
+    "question": "Are there any specific driving tips for Lisbon?",
+    "country": "Portugal",
+    "destination": "Lisbon",
+    "relevant_document_ids": [
+      "626"
+    ],
+    "source_section": "Stay safe",
+    "source_subsection": "Walking and driving"
+  },
+  {
+    "question": "How much does hitching cost compared to a taxi?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "197"
+    ],
+    "source_section": "Get around",
+    "source_subsection": "By thumb"
+  },
+  {
+    "question": "Do I need to pay for hitching in Morocco?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "197"
+    ],
+    "source_section": "Get around",
+    "source_subsection": "By thumb"
+  },
+  {
+    "question": "What are the main geographical features of Portugal?",
+    "country": "Portugal",
+    "destination": null,
+    "relevant_document_ids": [
+      "470"
+    ],
+    "source_section": "Understand",
+    "source_subsection": null
+  },
+  {
+    "question": "How does Portugal's land area compare to its natural diversity?",
+    "country": "Portugal",
+    "destination": null,
+    "relevant_document_ids": [
+      "470"
+    ],
+    "source_section": "Understand",
+    "source_subsection": null
+  },
+  {
+    "question": "What are the two types of fado in Portugal?",
+    "country": "Portugal",
+    "destination": "Coimbra",
+    "relevant_document_ids": [
+      "727"
+    ],
+    "source_section": "Do",
+    "source_subsection": "Fado"
+  },
+  {
+    "question": "Which fado group is mentioned for Coimbra?",
+    "country": "Portugal",
+    "destination": "Coimbra",
+    "relevant_document_ids": [
+      "727"
+    ],
+    "source_section": "Do",
+    "source_subsection": "Fado"
+  },
+  {
+    "question": "What are some key attractions in Porto that I should visit?",
+    "country": "Portugal",
+    "destination": "Porto",
+    "relevant_document_ids": [
+      "833"
+    ],
+    "source_section": "Go next",
+    "source_subsection": null
+  },
+  {
+    "question": "Are there any historic landmarks near the city center in Porto?",
+    "country": "Portugal",
+    "destination": "Porto",
+    "relevant_document_ids": [
+      "833"
+    ],
+    "source_section": "Go next",
+    "source_subsection": null
+  },
+  {
+    "question": "Where should I get off the metro to reach the Chatuchak Weekend Market?",
+    "country": "Thailand",
+    "destination": "Bangkok",
+    "relevant_document_ids": [
+      "1053"
+    ],
+    "source_section": "Get around",
+    "source_subsection": "Metro"
+  },
+  {
+    "question": "Which metro stops connect to the Skytrain?",
+    "country": "Thailand",
+    "destination": "Bangkok",
+    "relevant_document_ids": [
+      "1053"
+    ],
+    "source_section": "Get around",
+    "source_subsection": "Metro"
+  },
+  {
+    "question": "Do I need to wear specific clothing when visiting Wat Phra Mahathat?",
+    "country": "Thailand",
+    "destination": "Ayutthaya",
+    "relevant_document_ids": [
+      "1151"
+    ],
+    "source_section": "See",
+    "source_subsection": "On the island"
+  },
+  {
+    "question": "Are there any entry fees for the working temples in Ayutth:ay?",
+    "country": "Thailand",
+    "destination": "Ayutthaya",
+    "relevant_document_ids": [
+      "1151"
+    ],
+    "source_section": "See",
+    "source_subsection": "On the island"
+  },
+  {
+    "question": "What's the main difference between Chinese and Japanese-style castles?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1549"
+    ],
+    "source_section": "See",
+    "source_subsection": "Castles"
+  },
+  {
+    "question": "How do castle ruins compare to reconstructed castles in terms of authenticity?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1549"
+    ],
+    "source_section": "See",
+    "source_subsection": "Castles"
+  },
+  {
+    "question": "How much does a dorm bed cost in Bangkok?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "920"
+    ],
+    "source_section": "Buy",
+    "source_subsection": "Costs"
+  },
+  {
+    "question": "What's the typical daily budget for budget travelers in Bangkok?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "920"
+    ],
+    "source_section": "Buy",
+    "source_subsection": "Costs"
+  },
+  {
+    "question": "How often does the boat service run to Rodrigues Island from Port Louis Harbour?",
+    "country": "Mauritius",
+    "destination": null,
+    "relevant_document_ids": [
+      "2077"
+    ],
+    "source_section": "Get around",
+    "source_subsection": "By boat"
+  },
+  {
+    "question": "Which islands can the Mauritius Trochetia ship visit besides Réunion?",
+    "country": "Mauritius",
+    "destination": null,
+    "relevant_document_ids": [
+      "2077"
+    ],
+    "source_section": "Get around",
+    "source_subsection": "By boat"
+  },
+  {
+    "question": "What's the best time of year to visit Bangkok for cooler temperatures?",
+    "country": "Thailand",
+    "destination": "Bangkok",
+    "relevant_document_ids": [
+      "1021"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Climate"
+  },
+  {
+    "question": "How do the temperatures change during the wet season in Bangkok?",
+    "country": "Thailand",
+    "destination": "Bangkok",
+    "relevant_document_ids": [
+      "1021"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Climate"
+  },
+  {
+    "question": "How can I avoid getting scammed when renting jet skis in Pattaya?",
+    "country": "Thailand",
+    "destination": "Pattaya",
+    "relevant_document_ids": [
+      "1430"
+    ],
+    "source_section": "Stay safe",
+    "source_subsection": "Scams"
+  },
+  {
+    "question": "What should I check when paying with 1,000 baht notes in bars?",
+    "country": "Thailand",
+    "destination": "Pattaya",
+    "relevant_document_ids": [
+      "1430"
+    ],
+    "source_section": "Stay safe",
+    "source_subsection": "Scams"
+  },
+  {
+    "question": "How much does it cost to enter Sukhothai Historic Park?",
+    "country": "Thailand",
+    "destination": "Sukhothai",
+    "relevant_document_ids": [
+      "1468"
+    ],
+    "source_section": "See",
+    "source_subsection": "Outside Sukhothai Historic Park"
+  },
+  {
+    "question": "Is there a fee for visiting Sukhothai Historic Park?",
+    "country": "Thailand",
+    "destination": "Sukhothai",
+    "relevant_document_ids": [
+      "1468"
+    ],
+    "source_section": "See",
+    "source_subsection": "Outside Sukhothai Historic Park"
+  },
+  {
+    "question": "What should I expect if someone offers me a massage at a hammam in Morocco?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "204"
+    ],
+    "source_section": "Do",
+    "source_subsection": "Hammams"
+  },
+  {
+    "question": "How much does a typical hammam massage cost in Morocco?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "204"
+    ],
+    "source_section": "Do",
+    "source_subsection": "Hammams"
+  },
+  {
+    "question": "What's the best way to get to the beaches from Aveiro city if you only stay there?",
+    "country": "Portugal",
+    "destination": "Aveiro",
+    "relevant_document_ids": [
+      "684"
+    ],
+    "source_section": "Get around",
+    "source_subsection": "By bus"
+  },
+  {
+    "question": "Do I need a bus pass to travel between Aveiro and the beaches during summer?",
+    "country": "Portugal",
+    "destination": "Aveiro",
+    "relevant_document_ids": [
+      "684"
+    ],
+    "source_section": "Get around",
+    "source_subsection": "By bus"
+  },
+  {
+    "question": "Which airlines operate domestic flights to Bangkok (Don Mueang)?",
+    "country": "Thailand",
+    "destination": "Hat Yai",
+    "relevant_document_ids": [
+      "1263"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By plane"
+  },
+  {
+    "question": "What international connections are available from Hat Yai?",
+    "country": "Thailand",
+    "destination": "Hat Yai",
+    "relevant_document_ids": [
+      "1263"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By plane"
+  },
+  {
+    "question": "What's the total area of Thailand in square kilometers?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "842"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Geography"
+  },
+  {
+    "question": "How many offshore islands does Thailand have that are estimated to be inhabited?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "842"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Geography"
+  },
+  {
+    "question": "What's the best way to get to Funch: by plane or by car?",
+    "country": "Portugal",
+    "destination": "Funchal",
+    "relevant_document_ids": [
+      "754"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By plane"
+  },
+  {
+    "question": "How long does it take to fly from Lisbon to Funchal?",
+    "country": "Portugal",
+    "destination": "Funchal",
+    "relevant_document_ids": [
+      "754"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By plane"
+  },
+  {
+    "question": "Which airport is better for most international travelers in Bangkok?",
+    "country": "Thailand",
+    "destination": "Bangkok",
+    "relevant_document_ids": [
+      "1029"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By plane"
+  },
+  {
+    "question": "How long does it typically take to transfer between the two major airports in Bangkok?",
+    "country": "Thailand",
+    "destination": "Bangkok",
+    "relevant_document_ids": [
+      "1029"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By plane"
+  },
+  {
+    "question": "How often do the Metro Express trains run?",
+    "country": "Mauritius",
+    "destination": null,
+    "relevant_document_ids": [
+      "2078"
+    ],
+    "source_section": "Get around",
+    "source_subsection": "By train"
+  },
+  {
+    "question": "What is the cost of a Metro Express train ride?",
+    "country": "Mauritius",
+    "destination": null,
+    "relevant_document_ids": [
+      "2078"
+    ],
+    "source_section": "Get around",
+    "source_subsection": "By train"
+  },
+  {
+    "question": "How much does a standard double room cost in Bangkok?",
+    "country": "Thailand",
+    "destination": "Bangkok",
+    "relevant_document_ids": [
+      "1114"
+    ],
+    "source_section": "Sleep",
+    "source_subsection": null
+  },
+  {
+    "question": "What's the best way to get around Bangkok when staying at a hotel?",
+    "country": "Thailand",
+    "destination": "Bangkok",
+    "relevant_document_ids": [
+      "1114"
+    ],
+    "source_section": "Sleep",
+    "source_subsection": null
+  },
+  {
+    "question": "How many original castles in Japan are there?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1548"
+    ],
+    "source_section": "See",
+    "source_subsection": "Castles"
+  },
+  {
+    "question": "Which region has the most original castles in Japan?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1548"
+    ],
+    "source_section": "See",
+    "source_subsection": "Castles"
+  },
+  {
+    "question": "What's the best time of year to visit Mauritius if you want to avoid rain?",
+    "country": "Mauritius",
+    "destination": null,
+    "relevant_document_ids": [
+      "2068"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Climate"
+  },
+  {
+    "question": "Which part of Mauritius gets the most rain?",
+    "country": "Mauritius",
+    "destination": null,
+    "relevant_document_ids": [
+      "2068"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Climate"
+  },
+  {
+    "question": "How long does it take to get from Fukuoka to Nagasaki by train?",
+    "country": "Japan",
+    "destination": "Nagasaki",
+    "relevant_document_ids": [
+      "1937"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By train"
+  },
+  {
+    "question": "What is the cost of a reserved seat ticket from Fukuoka to Nagasaki?",
+    "country": "Japan",
+    "destination": "Nagasaki",
+    "relevant_document_ids": [
+      "1937"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By train"
+  },
+  {
+    "question": "What's the best way to get from Chiang Mai to Bangkok if I'm flying with Thai Airways?",
+    "country": "Thailand",
+    "destination": "Chiang Mai",
+    "relevant_document_ids": [
+      "1175"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "International"
+  },
+  {
+    "question": "How much extra do I need to pay for a through fare from Chiang Mai to Bangkok with Thai Airways?",
+    "country": "Thailand",
+    "destination": "Chiang Mai",
+    "relevant_document_ids": [
+      "1175"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "International"
+  },
+  {
+    "question": "Can I stay overnight in a public bath without booking a hotel room?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1655"
+    ],
+    "source_section": "Sleep",
+    "source_subsection": "Public baths"
+  },
+  {
+    "question": "How much does it cost to sleep overnight in a public bath?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1655"
+    ],
+    "source_section": "Sleep",
+    "source_subsection": "Public baths"
+  },
+  {
+    "question": "What's the name of the university library in Coimbra?",
+    "country": "Portugal",
+    "destination": "Coimbra",
+    "relevant_document_ids": [
+      "723"
+    ],
+    "source_section": "See",
+    "source_subsection": null
+  },
+  {
+    "question": "Are there any botanical gardens near the university in Coimbra?",
+    "country": "Portugal",
+    "destination": "Coimbra",
+    "relevant_document_ids": [
+      "723"
+    ],
+    "source_section": "See",
+    "source_subsection": null
+  },
+  {
+    "question": "Are there any English teaching opportunities in Kanazawa?",
+    "country": "Japan",
+    "destination": "Kanazawa",
+    "relevant_document_ids": [
+      "1862"
+    ],
+    "source_section": "Work",
+    "source_subsection": null
+  },
+  {
+    "question": "Can I get legal advice for foreigners in Kanazawa?",
+    "country": "Japan",
+    "destination": "Kanazawa",
+    "relevant_document_ids": [
+      "1862"
+    ],
+    "source_section": "Work",
+    "source_subsection": null
+  },
+  {
+    "question": "How should I handle situations where someone tries to get me to pay extra for transportation?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "241"
+    ],
+    "source_section": "Cope",
+    "source_subsection": "Bargaining and getting fooled"
+  },
+  {
+    "question": "What's the best way to avoid being tricked when bargaining with locals?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "241"
+    ],
+    "source_section": "Cope",
+    "source_subsection": "Bargaining and getting fooled"
+  },
+  {
+    "question": "What languages do merchants in Sousse typically speak?",
+    "country": "Tunisia",
+    "destination": "Sousse",
+    "relevant_document_ids": [
+      "141"
+    ],
+    "source_section": "Buy",
+    "source_subsection": null
+  },
+  {
+    "question": "Is it common to find counterfeit designer goods in the Medina?",
+    "country": "Tunisia",
+    "destination": "Sousse",
+    "relevant_document_ids": [
+      "141"
+    ],
+    "source_section": "Buy",
+    "source_subsection": null
+  },
+  {
+    "question": "What should I do with my passport when traveling in Pattaya?",
+    "country": "Thailand",
+    "destination": "Pattaya",
+    "relevant_document_ids": [
+      "1431"
+    ],
+    "source_section": "Stay safe",
+    "source_subsection": "Police"
+  },
+  {
+    "question": "Is it safe to carry just a passport copy in Pattaya?",
+    "country": "Thailand",
+    "destination": "Pattaya",
+    "relevant_document_ids": [
+      "1431"
+    ],
+    "source_section": "Stay safe",
+    "source_subsection": "Police"
+  },
+  {
+    "question": "What was the impact of the Great Toh: Earthquake and Tsunami in 2011?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1491"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Post-war Japan"
+  },
+  {
+    "question": "When did Emperor Naruhito become the emperor?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1491"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Post-war Japan"
+  },
+  {
+    "question": "What historical site in Sousse is known for its authentic medina and souk?",
+    "country": "Tunisia",
+    "destination": null,
+    "relevant_document_ids": [
+      "21"
+    ],
+    "source_section": "See",
+    "source_subsection": "History and archaeology"
+  },
+  {
+    "question": "Which city in Tunisia has a Roman amphitheater that's a notable historical site?",
+    "country": "Tunisia",
+    "destination": null,
+    "relevant_document_ids": [
+      "21"
+    ],
+    "source_section": "See",
+    "source_subsection": "History and archaeology"
+  },
+  {
+    "question": "What is a major tourist attraction in Thailand for LGBT travelers?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "975"
+    ],
+    "source_section": "Stay safe",
+    "source_subsection": "LGBT travellers"
+  },
+  {
+    "question": "Is same-sex marriage legal in Thailand?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "975"
+    ],
+    "source_section": "Stay safe",
+    "source_subsection": "LGBT travellers"
+  },
+  {
+    "question": "When does the Africa Cup of Nations take place in Morocco?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "205"
+    ],
+    "source_section": "Do",
+    "source_subsection": "Sports"
+  },
+  {
+    "question": "Which cities in Morocco will host the Africa Cup of Nations?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "205"
+    ],
+    "source_section": "Do",
+    "source_subsection": "Sports"
+  },
+  {
+    "question": "How do I get from Ratchadamnoen to Chok Chai?",
+    "country": "Thailand",
+    "destination": "Nakhon Ratchasima",
+    "relevant_document_ids": [
+      "1323"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Orientation"
+  },
+  {
+    "question": "What are the common spelling variations for local street names in Nakhon Ratchasima?",
+    "country": "Thailand",
+    "destination": "Nakhon Ratchasima",
+    "relevant_document_ids": [
+      "1323"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Orientation"
+  },
+  {
+    "question": "What's the best area in Kanazawa for evening activities with lots of shops and food options?",
+    "country": "Japan",
+    "destination": "Kanazawa",
+    "relevant_document_ids": [
+      "1849"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Orientation"
+  },
+  {
+    "question": "Which area in Kanazawa has traditional samurai houses and local craft shops?",
+    "country": "Japan",
+    "destination": "Kanazawa",
+    "relevant_document_ids": [
+      "1849"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Orientation"
+  },
+  {
+    "question": "What's the best time to visit the souks in Marrakech without too many people?",
+    "country": "Morocco",
+    "destination": "Marrakech",
+    "relevant_document_ids": [
+      "379"
+    ],
+    "source_section": "Buy",
+    "source_subsection": null
+  },
+  {
+    "question": "Are the smartphones sold at Djemaa El-Fna in Morocco genuine or fake?",
+    "country": "Morocco",
+    "destination": "Marrakech",
+    "relevant_document_ids": [
+      "379"
+    ],
+    "source_section": "Buy",
+    "source_subsection": null
+  },
+  {
+    "question": "How long does the bus journey from Kuala Lumpur to Hat Yai take?",
+    "country": "Thailand",
+    "destination": "Hat Yai",
+    "relevant_document_ids": [
+      "1271"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "From [[Malaysia]]"
+  },
+  {
+    "question": "What is the typical cost range for minivans traveling from Hat Yai to Penang?",
+    "country": "Thailand",
+    "destination": "Hat Yai",
+    "relevant_document_ids": [
+      "1271"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "From [[Malaysia]]"
+  },
+  {
+    "question": "What should I do to avoid theft in Marrakech?",
+    "country": "Morocco",
+    "destination": "Marrakech",
+    "relevant_document_ids": [
+      "396"
+    ],
+    "source_section": "Stay safe",
+    "source_subsection": null
+  },
+  {
+    "question": "Is it safe to order room service alone in Marrakech?",
+    "country": "Morocco",
+    "destination": "Marrakech",
+    "relevant_document_ids": [
+      "396"
+    ],
+    "source_section": "Stay safe",
+    "source_subsection": null
+  },
+  {
+    "question": "What are some unique attractions in Isaan that I should check out?",
+    "country": "Thailand",
+    "destination": "Isaan",
+    "relevant_document_ids": [
+      "1357"
+    ],
+    "source_section": "See",
+    "source_subsection": null
+  },
+  {
+    "question": "Are there any natural wonders in Isa: Isaan besides the historical sites?",
+    "country": "Thailand",
+    "destination": "Isaan",
+    "relevant_document_ids": [
+      "1357"
+    ],
+    "source_section": "See",
+    "source_subsection": null
+  },
+  {
+    "question": "Do Thais typically tip in their daily transactions?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "919"
+    ],
+    "source_section": "Buy",
+    "source_subsection": "Tipping"
+  },
+  {
+    "question": "How much should I tip at a Thai restaurant if I'm a tourist?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "919"
+    ],
+    "source_section": "Buy",
+    "source_subsection": "Tipping"
+  },
+  {
+    "question": "How can I find affordable accommodation options in rural Portugal?",
+    "country": "Portugal",
+    "destination": null,
+    "relevant_document_ids": [
+      "539"
+    ],
+    "source_section": "Sleep",
+    "source_subsection": null
+  },
+  {
+    "question": "Are Casas de Campo available year-round for travelers?",
+    "country": "Portugal",
+    "destination": null,
+    "relevant_document_ids": [
+      "539"
+    ],
+    "source_section": "Sleep",
+    "source_subsection": null
+  },
+  {
+    "question": "What is the cost of the visa-on-arrival in Thailand?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "858"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "Entry requirements"
+  },
+  {
+    "question": "Do I need to show proof of sufficient funds when entering Thailand with a visa-on-arrival?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "858"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "Entry requirements"
+  },
+  {
+    "question": "What's a good place to go for families in Mauritius near the capital?",
+    "country": "Mauritius",
+    "destination": "Port Louis",
+    "relevant_document_ids": [
+      "2136"
+    ],
+    "source_section": "Go next",
+    "source_subsection": null
+  },
+  {
+    "question": "Which beaches near Port Louis are good for scuba diving?",
+    "country": "Mauritius",
+    "destination": "Port Louis",
+    "relevant_document_ids": [
+      "2136"
+    ],
+    "source_section": "Go next",
+    "source_subsection": null
+  },
+  {
+    "question": "How should I handle a vendor who is aggressive during bargaining in Morocco?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "218"
+    ],
+    "source_section": "Buy",
+    "source_subsection": "Bargaining"
+  },
+  {
+    "question": "What happens if I walk out of a store after bargaining for a carpet in Morocco?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "218"
+    ],
+    "source_section": "Buy",
+    "source_subsection": "Bargaining"
+  },
+  {
+    "question": "What amenities does the hotel in Angra do Heroísmo provide?",
+    "country": "Portugal",
+    "destination": "Angra do Heroísmo",
+    "relevant_document_ids": [
+      "647"
+    ],
+    "source_section": "Sleep",
+    "source_subsection": null
+  },
+  {
+    "question": "Does the hotel have a pool?",
+    "country": "Portugal",
+    "destination": "Angra do Heroísmo",
+    "relevant_document_ids": [
+      "647"
+    ],
+    "source_section": "Sleep",
+    "source_subsection": null
+  },
+  {
+    "question": "What should I do to check water levels during monsoon season in Hat Yai?",
+    "country": "Thailand",
+    "destination": "Hat Yai",
+    "relevant_document_ids": [
+      "1287"
+    ],
+    "source_section": "Stay safe",
+    "source_subsection": null
+  },
+  {
+    "question": "Where can I find air quality information for Hat Yai?",
+    "country": "Thailand",
+    "destination": "Hat Yai",
+    "relevant_document_ids": [
+      "1287"
+    ],
+    "source_section": "Stay safe",
+    "source_subsection": null
+  },
+  {
+    "question": "How do I get from Tokyo to Osaka using the train?",
+    "country": "Japan",
+    "destination": "Osaka",
+    "relevant_document_ids": [
+      "1985"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "From Tokyo"
+  },
+  {
+    "question": "What's the best way to travel from Tokyo to Osaka by train?",
+    "country": "Japan",
+    "destination": "Osaka",
+    "relevant_document_ids": [
+      "1985"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "From Tokyo"
+  },
+  {
+    "question": "What's the main focus of traditional Japanese puppet theater?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1573"
+    ],
+    "source_section": "Do",
+    "source_subsection": "Performing arts"
+  },
+  {
+    "question": "How do kabuki performers create dramatic effects during their shows?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1573"
+    ],
+    "source_section": "Do",
+    "source_subsection": "Performing arts"
+  },
+  {
+    "question": "What should I be cautious about when meeting new people in Kabukichō?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1667"
+    ],
+    "source_section": "Stay safe",
+    "source_subsection": "Crimes and scams"
+  },
+  {
+    "question": "Is it safe to follow street touts in Tokyo's Kabukichō district?",
+    "country": "Japan",
+    "destination": null,
+    "relevant_document_ids": [
+      "1667"
+    ],
+    "source_section": "Stay safe",
+    "source_subsection": "Crimes and scams"
+  },
+  {
+    "question": "What's the name of the brewery that makes some of Kyoto's most famous sake?",
+    "country": "Japan",
+    "destination": "Kyoto",
+    "relevant_document_ids": [
+      "1924"
+    ],
+    "source_section": "Drink",
+    "source_subsection": "Sake"
+  },
+  {
+    "question": "Does Gekkeikan Brewery offer tours of its facilities?",
+    "country": "Japan",
+    "destination": "Kyoto",
+    "relevant_document_ids": [
+      "1924"
+    ],
+    "source_section": "Drink",
+    "source_subsection": "Sake"
+  },
+  {
+    "question": "What's a good budget-friendly snack in Morocco that's easy to find?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "222"
+    ],
+    "source_section": "Eat",
+    "source_subsection": "Traditional cuisine"
+  },
+  {
+    "question": "How much does a traditional pastilla cost in touristy areas?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "222"
+    ],
+    "source_section": "Eat",
+    "source_subsection": "Traditional cuisine"
+  },
+  {
+    "question": "What's the price range for a serving of harira soup in Marrakesh?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "221"
+    ],
+    "source_section": "Eat",
+    "source_subsection": "Traditional cuisine"
+  },
+  {
+    "question": "How much does a typical serving of ghoulal cost at street food stalls near Marrakesh?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "221"
+    ],
+    "source_section": "Eat",
+    "source_subsection": "Traditional cuisine"
+  },
+  {
+    "question": "What's the typical price range for a bowl of noodles at a noodle bar in Tokyo?",
+    "country": "Japan",
+    "destination": "Tokyo",
+    "relevant_document_ids": [
+      "1779"
+    ],
+    "source_section": "Eat",
+    "source_subsection": "Budget"
+  },
+  {
+    "question": "Do students and office workers in Tokyo often eat at places that sell takeaway lunchboxes?",
+    "country": "Japan",
+    "destination": "Tokyo",
+    "relevant_document_ids": [
+      "1779"
+    ],
+    "source_section": "Eat",
+    "source_subsection": "Budget"
+  },
+  {
+    "question": "What role did Osaka play historically in Japan's economy?",
+    "country": "Japan",
+    "destination": "Osaka",
+    "relevant_document_ids": [
+      "1971"
+    ],
+    "source_section": "Understand",
+    "source_subsection": null
+  },
+  {
+    "question": "How has Osaka's reputation for food and nightlife evolved over time?",
+    "country": "Japan",
+    "destination": "Osaka",
+    "relevant_document_ids": [
+      "1971"
+    ],
+    "source_section": "Understand",
+    "source_subsection": null
+  },
+  {
+    "question": "What's a typical street food price in Thailand for a simple meal?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "930"
+    ],
+    "source_section": "Eat",
+    "source_subsection": null
+  },
+  {
+    "question": "How do locals usually find restaurant reviews in Thailand?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "930"
+    ],
+    "source_section": "Eat",
+    "source_subsection": null
+  },
+  {
+    "question": "Is it legal in Morocco to mock the national flag?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "265"
+    ],
+    "source_section": "Respect",
+    "source_subsection": "Symbols"
+  },
+  {
+    "question": "What happens if you disrespect the national anthem in Morocco?",
+    "country": "Morocco",
+    "destination": null,
+    "relevant_document_ids": [
+      "265"
+    ],
+    "source_section": "Respect",
+    "source_subsection": "Symbols"
+  },
+  {
+    "question": "When is the Mineral Water and Waterfall Bathing Day held in Kanchanaburi?",
+    "country": "Thailand",
+    "destination": "Kanchanaburi",
+    "relevant_document_ids": [
+      "1313"
+    ],
+    "source_section": "See",
+    "source_subsection": "Events and festivals"
+  },
+  {
+    "question": "What activities are featured during the Boat and Raft People's Day in Kanch...?",
+    "country": "Thailand",
+    "destination": "Kanchanaburi",
+    "relevant_document_ids": [
+      "1313"
+    ],
+    "source_section": "See",
+    "source_subsection": "Events and festivals"
+  },
+  {
+    "question": "What are the typical temperatures in Tokyo during the rainy season?",
+    "country": "Japan",
+    "destination": "Tokyo",
+    "relevant_document_ids": [
+      "1720"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Climate"
+  },
+  {
+    "question": "How does Tokyo's climate affect the summer months for visitors?",
+    "country": "Japan",
+    "destination": "Tokyo",
+    "relevant_document_ids": [
+      "1720"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Climate"
+  },
+  {
+    "question": "What traditional Thai arts are influenced by Hindu mythology?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "849"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Culture"
+  },
+  {
+    "question": "How has Chinese culture impacted Thai cuisine?",
+    "country": "Thailand",
+    "destination": null,
+    "relevant_document_ids": [
+      "849"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Culture"
+  },
+  {
+    "question": "How much does a single person's apartment rent cost in Tokyo?",
+    "country": "Japan",
+    "destination": "Tokyo",
+    "relevant_document_ids": [
+      "1718"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Expenses"
+  },
+  {
+    "question": "Is Tokyo more expensive than cities like New York or London?",
+    "country": "Japan",
+    "destination": "Tokyo",
+    "relevant_document_ids": [
+      "1718"
+    ],
+    "source_section": "Understand",
+    "source_subsection": "Expenses"
+  },
+  {
+    "question": "How long does it take to get from Pattaya to Bangkok on the first bus of the day?",
+    "country": "Thailand",
+    "destination": "Pattaya",
+    "relevant_document_ids": [
+      "1381"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "From Bangkok"
+  },
+  {
+    "question": "What's the cheapest way to get from Patt: 1. The bus station in Pattaya to Bangkok? 2. The bus station in Pattaya to Bangkok?",
+    "country": "Thailand",
+    "destination": "Pattaya",
+    "relevant_document_ids": [
+      "1381"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "From Bangkok"
+  },
+  {
+    "question": "What's the main airport in the Azores for travelers arriving from outside Portugal?",
+    "country": "Portugal",
+    "destination": "Azores",
+    "relevant_document_ids": [
+      "654"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By plane"
+  },
+  {
+    "question": "Can I fly into the Azores from a different airport than my starting point to visit more islands?",
+    "country": "Portugal",
+    "destination": "Azores",
+    "relevant_document_ids": [
+      "654"
+    ],
+    "source_section": "Get in",
+    "source_subsection": "By plane"
+  },
+  {
+    "question": "What's the best place to get a view of the city and sea in Tangier?",
+    "country": "Morocco",
+    "destination": "Tangier",
+    "relevant_document_ids": [
+      "454"
+    ],
+    "source_section": "Do",
+    "source_subsection": null
+  },
+  {
+    "question": "Where can I find the fishermen bringing in their catch in Tangier?",
+    "country": "Morocco",
+    "destination": "Tangier",
+    "relevant_document_ids": [
+      "454"
+    ],
+    "source_section": "Do",
+    "source_subsection": null
+  }
+]
