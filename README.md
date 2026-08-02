@@ -8,64 +8,107 @@ Examples:
 
 - What are the best things to do in Marrakech?
 - How can I get around Bangkok?
-- Which areas of Lisbon are known for nightlife?
+- When is the best time to visit Sukhothai’s ruins?
 
 ## WanderWise v1
 
-The first version of WanderWise focuses on building a complete and evaluated travel RAG application.
+The first version of WanderWise focuses on building a complete, evaluated, and reproducible travel RAG application.
 
-### Travel Knowledge Base
+The current version includes:
 
-Travel information is collected from **Wikivoyage** through a reproducible ingestion pipeline.
+- A Wikivoyage ingestion pipeline
+- PostgreSQL with pgvector
+- Keyword and vector search
+- Retrieval evaluation
+- An agentic RAG pipeline
+- OpenAI answer generation
+- Local LLM evaluation with Ollama
+
+## Travel Knowledge Base
+
+Travel information is collected from the official English Wikivoyage dump.
 
 The data is:
 
-- Downloaded from the official Wikivoyage dump
+- Downloaded from the official dump
 - Extracted by country and destination
 - Cleaned and structured
 - Split into sections and chunks
-- Prepared for search and retrieval
+- Stored in PostgreSQL
+- Embedded for semantic search
 
-### Search & Retrieval
+## Search and Retrieval
 
-WanderWise will experiment with multiple retrieval approaches:
+WanderWise implements two retrieval approaches:
 
-- Keyword Search
-- Vector Search
-- Hybrid Search
+- PostgreSQL full-text keyword search
+- Semantic vector search with pgvector
 
-The goal is to retrieve the most relevant travel information for each user question.
+A ground-truth question dataset was generated locally with Ollama and used to evaluate both approaches using:
 
-### Evaluation
+- Hit Rate@5
+- Mean Reciprocal Rank at 5
 
-The retrieval system will be evaluated using a ground-truth question dataset.
+### Search Evaluation
 
-Different retrieval approaches will be compared using metrics such as:
+![Search evaluation results](images/search_evaluation.png)
 
-- Hit Rate
-- Mean Reciprocal Rank (MRR)
+The evaluation showed that vector search performs significantly better than keyword search and is therefore used as the main retrieval method in WanderWise v1.
 
-The RAG answers will also be evaluated to understand how well the system uses the retrieved information and how relevant the generated answers are.
+## Agentic RAG
 
-### RAG
+The vector search method is exposed to the LLM as a tool.
 
-The final retrieval pipeline will be connected to an LLM.
+The model can decide:
 
-User Question  
-↓  
-Search Travel Knowledge Base  
-↓  
-Retrieve Relevant Documents  
-↓  
-Build Context  
-↓  
-LLM  
-↓  
-Grounded Answer + Sources
+- When retrieval is needed
+- How to formulate the search query
+- Whether additional context is required
+- When it has enough information to answer
 
-The goal is to generate useful travel answers based primarily on retrieved information rather than relying only on the LLM's internal knowledge.
+The search tool can be called up to three times.
 
-### Monitoring
+```text
+User Question
+↓
+LLM
+↓
+Travel Search Tool
+↓
+Vector Search
+↓
+Retrieved Context
+↓
+Grounded Answer
+```
+
+The final answers are generated using the OpenAI API.
+
+## RAG Evaluation
+
+The complete RAG pipeline was evaluated using:
+
+- The user question
+- A reference answer generated from the relevant document
+- The generated RAG answer
+- The exact retrieved context
+
+A local Ollama model was used as an LLM judge.
+
+The judge evaluated:
+
+- Correctness
+- Faithfulness
+- Relevance
+- Completeness
+
+### LLM Evaluation
+
+![LLM evaluation results](images/llm_evaluation.png)
+
+The evaluation helps identify where the RAG pipeline performs well and where answer quality can still be improved.
+
+## Monitoring
 
 WanderWise will monitor application usage and performance.
 
@@ -80,63 +123,61 @@ This can include:
 - User feedback
 - Timestamps
 
-Users will also be able to provide simple feedback on whether an answer was helpful.
+## Application
 
-### Application
+WanderWise v1 will include a simple web interface where users can ask travel questions and receive grounded answers.
 
-WanderWise v1 will include a simple web interface where users can ask travel-related questions and receive grounded answers with sources.
-
-The project will also be containerized with Docker to make the application easy to reproduce and run.
+The project will also be containerized with Docker to make it easy to reproduce and run.
 
 ## v1 Architecture
 
-Wikivoyage  
-↓  
-Data Ingestion  
-↓  
-Travel Knowledge Base  
-↓  
-Keyword + Vector Search  
-↓  
-Hybrid Retrieval  
-↓  
-Evaluation  
-↓  
-RAG  
-↓  
-Answer + Sources  
-↓  
-User Interface  
-↓  
-Monitoring & Feedback
+```text
+Wikivoyage
+↓
+Data Ingestion
+↓
+PostgreSQL + pgvector
+↓
+Vector Search
+↓
+Agentic RAG
+↓
+OpenAI Answer Generation
+↓
+Evaluation
+↓
+User Interface
+↓
+Monitoring
+```
 
 ## Goal of v1
 
 The goal of WanderWise v1 is to build a small, complete, evaluated, and reproducible travel RAG application.
 
-The focus is on building a strong foundation before adding more complex travel features.
+The focus is on building a strong foundation before adding more advanced travel features.
 
 ## Future Versions
 
-### WanderWise v2  Travel Data Platform
+### WanderWise v2 — Travel Data Platform
 
-The next version will expand the data layer with:
+The next version can include:
 
-- Structured destination data
-- PostgreSQL
-- Larger data ingestion pipelines
-- More countries and destinations
-- Better metadata and filtering
+- More destinations
 - Additional travel data sources
+- Better metadata and filtering
+- Improved retrieval
+- Conversation history
+- Additional agent tools
 
-### WanderWise v3  Live Travel Intelligence
+### WanderWise v3 — Live Travel Intelligence
 
-WanderWise will then start integrating live external data such as:
+Future versions can integrate live external data such as:
 
 - Weather
 - Currency information
 - Transportation data
 - Travel APIs
-- Other real-time destination information
+- Real-time destination information
 
-Future versions can build on this foundation to add destination recommendations, itinerary planning, personalization, and eventually a more complete AI travel assistant.
+This foundation can later support recommendations, itinerary planning, personalization, and a more complete AI travel assistant.
