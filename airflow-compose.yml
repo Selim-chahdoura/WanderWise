@@ -1,0 +1,25 @@
+services:
+  airflow:
+    build:
+      context: .
+      dockerfile: Dockerfile.airflow
+
+    container_name: wanderwise-airflow
+    command: standalone
+
+    ports:
+      - "8080:8080"
+
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      PYTHONPATH: /opt/airflow/wanderwise
+      DATABASE_URL: postgresql://user:pswd@host.docker.internal:5432/wanderwise
+
+    volumes:
+      - ./airflow:/opt/airflow
+      - ./src:/opt/airflow/wanderwise/src
+      - ./data:/opt/airflow/wanderwise/data
+
+    working_dir: /opt/airflow/wanderwise
+    restart: unless-stopped

@@ -5,20 +5,35 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 
-dump_path = Path("data/raw/wikivoyage.xml.bz2")
-output_path = Path("data/raw/extracted_pages.json")
-
-countries = [
-    "Tunisia",
-    "Morocco",
-    "Portugal",
-    "Thailand",
-    "Japan",
-    "Mauritius"
-]
+DUMP_PATH = Path("data/raw/wikivoyage.xml.bz2")
+RAW_DATA_DIR = Path("data/raw/countries")
 
 
-def get_pages():
+def normalize_country_name(country: str) -> str:
+    """
+    Convert a country name into a safe filename.
+
+    Example:
+        "New Zealand" -> "new_zealand"
+    """
+    return country.strip().lower().replace(" ", "_")
+
+
+def get_country_output_path(country: str) -> Path:
+    """
+    Return the raw output path for one country.
+    """
+    filename = f"{normalize_country_name(country)}.json"
+    return RAW_DATA_DIR / filename
+
+
+def get_pages(dump_path: Path = DUMP_PATH) -> dict[str, str]:
+    """
+    Read the Wikivoyage XML dump and return a dictionary in which:
+
+        key   = Wikivoyage page title
+        value = raw Wikivoyage page text
+    """
     pages = {}
 
     with bz2.open(dump_path, "rb") as file:
@@ -27,7 +42,7 @@ def get_pages():
                 title = elem.find("./{*}title")
                 text = elem.find("./{*}revision/{*}text")
 
-                if title is not None:
+                if title is not None and title.text:
                     pages[title.text] = text.text if text is not None else ""
 
                 elem.clear()
@@ -35,7 +50,10 @@ def get_pages():
     return pages
 
 
-def get_cities(country_text):
+def get_cities(country_text: str) -> list[str]:
+    """
+    Extract city links from the Cities section of a country article.
+    """
     match = re.search(
         r"==\s*Cities\s*==(.*?)(?=^==[^=]|\Z)",
         country_text,
@@ -55,51 +73,86 @@ def get_cities(country_text):
     return list(dict.fromkeys(link.strip() for link in links))
 
 
-def extract_pages():
-    print("Reading Wikivoyage dump...")
+def extract_country(
+    country: str,
+    dump_path: Path = DUMP_PATH,
+) -> Path:
+    """
+    Extract one country and its cities from the Wikivoyage dump.
 
-    pages = get_pages()
-    extracted = []
+    Returns:
+        Path to the generated JSON file.
+    """
+    dump_path = Path(dump_path)
+    country = country.strip()
 
-    for country in countries:
-        country_text = pages.get(country)
+    if not country:
+        raise ValueError("Country must not be empty.")
 
-        if not country_text:
-            continue
+    if not dump_path.exists():
+        raise FileNotFoundError(
+            f"Wikivoyage dump was not found: {dump_path}"
+        )
 
-        extracted.append({
+    print(f"Reading Wikivoyage dump for {country}...")
+
+    pages = get_pages(dump_path)
+    country_text = pages.get(country)
+
+    if not country_text:
+        raise ValueError(
+            f"No Wikivoyage page was found for country: {country}"
+        )
+
+    extracted = [
+        {
             "country": country,
             "destination": None,
             "place_type": "country",
             "title": country,
             "text": country_text,
-        })
+        }
+    ]
 
-        cities = get_cities(country_text)
+    cities = get_cities(country_text)
 
-        print(f"{country}: found {len(cities)} cities")
+    print(f"{country}: found {len(cities)} city links")
 
-        for city in cities:
-            city_text = pages.get(city)
+    extracted_city_count = 0
 
-            if not city_text:
-                continue
+    for city in cities:
+        city_text = pages.get(city)
 
-            extracted.append({
+        if not city_text:
+            print(f"Skipping missing city page: {city}")
+            continue
+
+        extracted.append(
+            {
                 "country": country,
                 "destination": city,
                 "place_type": "city",
                 "title": city,
                 "text": city_text,
-            })
+            }
+        )
 
+        extracted_city_count += 1
+
+    output_path = get_country_output_path(country)
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    with open(output_path, "w", encoding="utf-8") as file:
+    with output_path.open("w", encoding="utf-8") as file:
         json.dump(extracted, file, ensure_ascii=False, indent=2)
 
-    print(f"Saved {len(extracted)} pages to {output_path}")
+    print(
+        f"Saved {len(extracted)} pages for {country} "
+        f"to {output_path}"
+    )
+    print(f"Successfully extracted {extracted_city_count} city pages")
+
+    return output_path
 
 
 if __name__ == "__main__":
-    extract_pages()
+    extract_country("Japan")

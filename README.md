@@ -6,7 +6,7 @@ Users can ask natural-language questions about destinations, and WanderWise retr
 
 Examples:
 
-- What are the best things to do in Marrakech?
+- What are the best things to do in Tunis?
 - How can I get around Bangkok?
 - When is the best time to visit Sukhothai’s ruins?
 
