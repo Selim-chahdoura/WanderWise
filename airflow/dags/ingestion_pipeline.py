@@ -29,10 +29,7 @@ def run_country_data_ingestion_pipeline():
     @task
     def get_country() -> str:
         context = get_current_context()
-        country = context["params"]["country"].strip()
-
-        if not country:
-            raise ValueError("Country must not be empty.")
+        country = context["dag_run"].conf["country"]
 
         print(f"Starting ingestion for {country}")
 

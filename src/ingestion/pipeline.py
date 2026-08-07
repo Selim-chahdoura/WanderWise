@@ -1,5 +1,4 @@
 import argparse
-from pathlib import Path
 
 from src.ingestion.chunk import chunk_country
 from src.ingestion.extract import extract_country
@@ -21,7 +20,7 @@ def run_pipeline(country: str) -> None:
 
     raw_path = extract_country(
         country=country,
-        dump_path= Path(dump_path),
+        dump_path= dump_path,
     )
 
     processed_path = process_country(

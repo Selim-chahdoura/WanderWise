@@ -12,6 +12,7 @@ services:
 
     environment:
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_ALL_ADMINS: "true"
       AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
       PYTHONPATH: /opt/airflow/wanderwise
       DATABASE_URL: postgresql://user:pswd@host.docker.internal:5432/wanderwise
@@ -20,6 +21,7 @@ services:
       - ./airflow:/opt/airflow
       - ./src:/opt/airflow/wanderwise/src
       - ./data:/opt/airflow/wanderwise/data
+      - ./config:/opt/airflow/wanderwise/config
 
     working_dir: /opt/airflow/wanderwise
     restart: unless-stopped

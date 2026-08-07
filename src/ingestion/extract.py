@@ -85,7 +85,7 @@ def extract_country(
     """
     dump_path = Path(dump_path)
     country = country.strip()
-
+    
     if not country:
         raise ValueError("Country must not be empty.")
 
