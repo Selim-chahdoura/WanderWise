@@ -51,6 +51,10 @@ Countries are stored in a configuration file. Airflow periodically checks for ne
 
 Each pipeline step is its own Airflow task, making failures and retries easy to track.
 
+### Airflow Ingestion Pipeline
+
+![Airflow Ingestion Pipeline](images/airflow_ingestion_pipeline.png)
+
 ## Search and Retrieval
 
 WanderWise supports:
