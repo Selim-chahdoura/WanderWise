@@ -1,5 +1,6 @@
 import json
 import os
+import time
 
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -115,11 +116,17 @@ def travel_search(
     number_of_results,
     search_history,
 ):
+    retrieval_start = time.perf_counter()
+
     documents = retrieve_documents(
         connection=connection,
         query=query,
         number_of_results=number_of_results,
     )
+
+    retrieval_time_ms = (
+        time.perf_counter() - retrieval_start
+    ) * 1000
 
     if not documents:
         result = "No relevant travel information was found."
@@ -128,7 +135,8 @@ def travel_search(
             {
                 "query": query,
                 "retrieved_document_ids": [],
-                "context": result,
+                "retrieved_document_count": 0,
+                "retrieval_time_ms": retrieval_time_ms,
             }
         )
 
@@ -145,7 +153,8 @@ def travel_search(
         {
             "query": query,
             "retrieved_document_ids": retrieved_document_ids,
-            "context": context,
+            "retrieved_document_count": len(documents),
+            "retrieval_time_ms": retrieval_time_ms,
         }
     )
 
@@ -200,6 +209,8 @@ def call_model(input_items):
 
 
 def answer_question_with_trace(question):
+    start_time = time.perf_counter()
+
     input_items = [
         {
             "role": "user",
@@ -208,20 +219,56 @@ def answer_question_with_trace(question):
     ]
 
     search_history = []
+
     tool_call_count = 0
+    model_call_count = 0
+
+    input_tokens = 0
+    output_tokens = 0
+    total_tokens = 0
+
+    model_time_ms = 0
 
     with connect() as connection:
         for _ in range(maximum_iterations):
+
+            model_start = time.perf_counter()
+
             response = call_model(input_items)
+
+            model_time_ms += (
+                time.perf_counter() - model_start
+            ) * 1000
+
+            model_call_count += 1
+
+            if response.usage:
+                input_tokens += response.usage.input_tokens
+                output_tokens += response.usage.output_tokens
+                total_tokens += response.usage.total_tokens
 
             input_items.extend(response.output)
 
             tool_calls = get_tool_calls(response)
 
             if not tool_calls:
+                response_time_ms = (
+                    time.perf_counter() - start_time
+                ) * 1000
+
                 return {
                     "answer": response.output_text,
+
+                    "response_time_ms": response_time_ms,
+                    "model_time_ms": model_time_ms,
+
+                    "input_tokens": input_tokens,
+                    "output_tokens": output_tokens,
+                    "total_tokens": total_tokens,
+
+                    "model_call_count": model_call_count,
                     "tool_call_count": tool_call_count,
+
                     "search_history": search_history,
                 }
 
@@ -254,15 +301,28 @@ def answer_question_with_trace(question):
                     )
                 )
 
+    response_time_ms = (
+        time.perf_counter() - start_time
+    ) * 1000
+
     return {
         "answer": (
             "I could not produce a reliable answer within "
             "the allowed number of search steps."
         ),
+
+        "response_time_ms": response_time_ms,
+        "model_time_ms": model_time_ms,
+
+        "input_tokens": input_tokens,
+        "output_tokens": output_tokens,
+        "total_tokens": total_tokens,
+
+        "model_call_count": model_call_count,
         "tool_call_count": tool_call_count,
+
         "search_history": search_history,
     }
-
 
 def answer_question(question):
     result = answer_question_with_trace(question)
