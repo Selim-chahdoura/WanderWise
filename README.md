@@ -117,15 +117,23 @@ The evaluation focuses on:
 
 ## Monitoring
 
-Future monitoring can include:
+WanderWise stores interaction metrics in PostgreSQL and visualizes them with Grafana.
 
-- User questions
-- Generated answers
-- Retrieved documents
-- Response time
-- Token usage
-- LLM cost
-- User feedback
+The monitoring dashboard includes:
+
+- Number of requests
+- Total token usage
+- Input, output, and total tokens per request
+- Average and latest response time
+- User thumbs up/down feedback
+
+### Grafana Monitoring Dashboard
+
+<p align="center">
+  <img src="images/grafana-monitoring.png" width="500">
+</p>
+
+The Grafana dashboard configuration is exported as JSON and stored in the `grafana/` folder
 
 ## Application
 

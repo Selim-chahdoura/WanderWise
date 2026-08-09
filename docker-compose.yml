@@ -10,6 +10,16 @@ services:
       - "5432:5432"
     volumes:
       - pgvector_data:/var/lib/postgresql/data
+  
+  grafana:
+    image: grafana/grafana:latest
+    container_name: wanderwise-grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+    restart: unless-stopped
 
 volumes:
   pgvector_data:
+  grafana_data:
