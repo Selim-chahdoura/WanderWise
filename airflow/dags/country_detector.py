@@ -17,7 +17,7 @@ DATABASE_URL = os.getenv(
 
 @dag(
     dag_id="wanderwise_country_detector",
-    schedule="*/1 * * * *",
+    schedule="*/10 * * * *",
     catchup=False,
     tags=["wanderwise", "detector"],
 )

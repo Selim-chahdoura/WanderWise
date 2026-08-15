@@ -8,7 +8,9 @@ DUMP_URL = (
     "enwikivoyage-latest-pages-articles.xml.bz2"
 )
 
-DATA_DIR = Path("data/raw")
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+DATA_DIR = PROJECT_ROOT / "data" / "raw"
 DUMP_PATH = DATA_DIR / "wikivoyage.xml.bz2"
 
 
